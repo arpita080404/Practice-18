@@ -1,0 +1,31 @@
+ #include<stdio.h>
+int main ( ) {
+
+ int maths[5]={5,6,23,15,25};
+ int cse[5]={15,16,23,10,9};
+ int che[5]={5,16,13,15,2};
+printf ("subject code:\nmaths=101\ncse=102\nche=103\n");
+  int sub_;
+  printf("Enter the subject code :\n");
+  scanf("%d",&sub_);
+   int i;
+  switch (sub_)
+ {
+     case 101 :
+     printf("subject is maths\n");
+     for(i=0;i<5;i++)
+       printf("%d\n",maths[i]);
+       break;
+     case 102:
+       printf("subject is cse\n");
+       for(i=0;i<5;i++)
+       printf("%d\n",cse[i]);
+       break;
+     case 103:
+      printf("subject is che\n");
+      for(i=0;i<5;i++)
+      printf("%d\n",che[i]);
+ }
+  
+  return 0;
+}
